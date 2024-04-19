@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Lighting Control</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h3>Power Monitoring of Smart Lighting Control System using Arduino</h3>
+
+
+    <div class="stat_head2">
+
+    <div class="stat_head">
+    <img src="/simple-line-icons_energy.svg">
+    <div class="stat">
+        <div class="title">Total Energy Consumed</div>
+        <div id="areaUnderGraph"></div>
+    </div>
+</div>
+
+    <div class="stat_head">
+    <img src="/simple-line-icons_power.svg">
+    <div class="stat">
+        <div class="title">Instantaneous Power</div>
+        <div id="instantaneousPower"></div>
+    </div>
+</div>
+</div>
+    
+    <button id="clearGraphData">Clear Graph Data</button>
+    <div class="graphs">
+        <div class="statg">
+        <div id="instantaneousPower">Total Energy Consumed</div>
+        <canvas id="graph1"></canvas>
+    </div>
+
+    <div class="statg">
+
+        <div id="instantaneousPower">Instantaneous Power</div>
+        <canvas id="graph2"></canvas>
+    </div>
+    
+
+    <!-- Socket.io library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>

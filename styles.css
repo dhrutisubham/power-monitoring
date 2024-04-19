@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Aptos;
+    src:url("./aptos.ttf");
+}
+
+
+
+#graph1, #graph2{
+    flex-basis: 50%;
+    transform: scale(1);
+    border-radius: 0.5rem;
+    box-shadow: 8px 8px 4rem rgba(0, 0, 0, 0.03);
+    /* padding: 1.5rem; */
+    background-color: white;
+
+}
+
+h3{
+    margin: auto;
+    width: 80%;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3.25rem;
+    color: #1b1b1b;
+}
+
+.stat_head{
+    display: flex;
+    padding: 2rem;
+    gap: 1.5rem;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 4rem rgba(0, 0, 0, 0.03);
+    flex-basis: 50%;
+
+}
+
+.stat_head2{
+    display: flex;
+
+    gap: 1rem;
+    margin-block-start: 2rem;
+    margin-block-end: 1rem;
+    flex-direction: row;
+
+    border-radius: 1rem;
+
+    flex-basis: 50%;
+
+}
+
+.stat{
+    display: flex;
+    gap:0rem;
+    flex-direction: column;
+
+}
+.statg{
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+
+}
+
+#instantaneousPower, #areaUnderGraph{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+body{
+    font-family: "Aptos" !important;
+    opacity: 1;
+    background-color: whitesmoke;
+    margin:0;
+    padding-block: 4rem;
+    padding-inline: 6rem;
+}
+
+.graphs{
+    display: flex;
+    min-height: 400px;
+    flex-direction: row;
+    gap:3rem;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div.title{
+    opacity: 0.50;
+}
+
+button{
+    border: none;
+    background-color: red;
+    border-radius: 1rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    font-family: "Aptos";
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    opacity: 1;
+    transition: all 150ms ease-in-out ;
+    cursor: pointer;
+    margin-block-end: 1rem;
+
+}
+
+button:hover{
+    opacity: 0.9;
+    background-color: rgb(221, 15, 15);
+}
+
